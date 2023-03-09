@@ -2,12 +2,12 @@ _SORT_KEY
 : 
 "HAJOLIE-LEA_BLACK SUEDE_234_6.5M"
 
-sort[A,B,C,D]
+sort[A,B,C,D]ssd
 done!
 
 
 add address code done
-change code to underscore.js (groupby) done
+change code to underscore.js (groupby) doneds
 
 
 --SHIPPING ORDER#
