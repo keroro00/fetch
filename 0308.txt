@@ -1,0 +1,25 @@
+_SORT_KEY
+: 
+"HAJOLIE-LEA_BLACK SUEDE_234_6.5M"
+
+sort[A,B,C,D]
+done!
+
+
+add address code done
+change code to underscore.js (groupby) done
+
+
+--SHIPPING ORDER#
+select top 10 * from TPRI.dbo.DOC856_DETAIL d with (nolock)
+left join TPRI.dbo.DOC856_DETAIL_EXTRA de with (nolock) on de.E856ID = d.E856ID and de.BUYERCODE = d.BUYERCODE and de.code='999SRN'
+where d.E856ID = 13459 and d.LEVELTYPE = 'S'
+
+--SHIPPING ORDER#
+select top 10 * from TPRI.dbo.DOC856_DETAIL d with (nolock)
+left join TPRI.dbo.DOC856_DETAIL_SHIPREFNUM ds with (nolock) on ds.E856ID = d.E856ID and ds.BUYERCODE = d.BUYERCODE and ds.numtype='BN'
+where d.E856ID = 13459 and d.LEVELTYPE = 'S'
+
+
+
+IVA21% total HTS
